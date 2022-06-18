@@ -1,8 +1,21 @@
-/** @type {import('next').NextConfig} */
 const withPlugins = require("next-compose-plugins");
 const withPWA = require("next-pwa");
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    loader: "custom",
+    nextImageExportOptimizer: {
+      imageFolderPath: "public/images",
+      exportFolderPath: "out",
+      quality: 60,
+    },
+    env: {
+      storePicturesInWEBP: true,
+      generateAndUseBlurImages: true,
+    },
+  }
+
 }
 
 module.exports = withPlugins([

@@ -41,6 +41,9 @@ yarn-error.log*
 **/public/worker-*.js.map
 **/public/fallback-*.js
 
+**/public/images/nextImageExportOptimizer
+**/public/images/next-image-export-optimizer-hashes.json
+
 yarn.lock
 
 
