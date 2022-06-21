@@ -11,6 +11,7 @@ I made this template to reduce the time to get started with a new project. I cho
 - TailwindCSS for styling
 - DaisyUI for premade UI components
 - CryptoJS for encryption
+- Image compression for Static Site Generation
 
 
 
