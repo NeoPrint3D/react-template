@@ -6,10 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "render": "next build && next export && node compress.js",
+    "render": "next build && next export && node scripts/compress.js",
     "preview": "next build && next export && next start",
-    "lint": "next lint",
-    "compress": "node compress.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "crypto-js": "^4.1.1",
