@@ -11,7 +11,7 @@ module.exports = {
         "secondary": "#ff9800"
       },
       minHeight: {
-        "page": "calc(100vh - 64px)"
+        "page": "calc(100vh - 5rem)"
       },
       screens: {
         'sm': '640px',
@@ -42,6 +42,4 @@ module.exports = {
       },
     ],
   },
-
-
 }

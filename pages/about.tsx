@@ -1,11 +1,10 @@
-import { m } from 'framer-motion'
-import Head from 'next/head'
+import Head from "next/head";
 
-export function Home() {
+export default function About() {
     return (
         <>
             <Head>
-                <title>Home</title>
+                <title>About</title>
                 <meta name="description" content="A fully featured react template" />
                 <meta property="og:url" content="https://neo-letter.web.app/" />
                 <meta property="og:type" content="website" />
@@ -13,13 +12,9 @@ export function Home() {
                 <meta property="og:description" content="A fully featured react template" />
                 <meta property="og:image" content="/preview/home.png" />
             </Head>
-            <div className='min-h-screen flex justify-center items-center'>
-                <h1 className="text-center text-white text-5xl">
-                    The React Template
-                </h1>
+            <div className="min-h-page flex justify-center items-center">
+                <p className="text-4xl">This is the about page</p>
             </div>
         </>
     )
 }
-
-export default Home

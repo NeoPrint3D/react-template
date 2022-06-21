@@ -5,10 +5,17 @@ import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
 
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <LazyMotion features={domMax}>
-      <div className='min-h-screen bg-white'>
+      <div className='min-h-screen'
+        style={{
+          backgroundImage: `url('/images/hero.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <Header />
         <Component {...pageProps} />
       </div>
@@ -17,4 +24,3 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
